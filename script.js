@@ -12,11 +12,11 @@ function addBook(title, author, year, genre){
 }
 
 function displayBooks(){
-    if (library.length === 0) {
+    if (Booklibrary.length === 0) {
         console.log("Empty library!.");
         return;
     }
-    library.forEach((book, index) => {
+    Booklibrary.forEach((book, index) => {
         console.log(`${index + 1}. ${book.title} by ${book.author} (${book.year}) - Genre: ${book.genre}`);
 
     });
